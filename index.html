@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Photo Grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="loader.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css"
+    />
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a class="logo" href="./index.html">
+          <i class="fa-duotone fa-objects-column"></i>
+          <div class="logo-text">
+            <p>Photo</p>
+            <p>Grid</p>
+          </div>
+        </a>
+
+        <div class="search-bar">
+          <input type="search" placeholder="Search Photos" />
+          <i class="fa-duotone fa-magnifying-glass"></i>
+        </div>
+        <div class="theme-mode">
+          <div id="night-mode">
+            <i class="fa-duotone fa-moon-stars"></i>
+            <div>
+              <p>Night</p>
+              <p>Mode</p>
+            </div>
+          </div>
+          <div id="day-mode">
+            <i class="fa-duotone fa-sun"></i>
+            <div>
+              <p>Day</p>
+              <p>Mode</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <main>
+        <!-- <div class="img vertical">
+          <img src="./images/vertical-1.jpg" alt="" />
+          <div class="hover-info">
+            <div class="photographer-info-group">
+              <div class="photographer-info">
+                <img
+                  src="./images/horizontal-1.jpg"
+                  alt=""
+                  class="profile-photo"
+                />
+                <div class="info-group">
+                  <p class="name">Mailchimp</p>
+                  <p><small>Denmark</small></p>
+                </div>
+              </div>
+              <div class="btn">
+                <i class="fa-duotone fa-user-plus"></i>
+                <p>Follow</p>
+              </div>
+            </div>
+            <div class="additional-info">
+              <div class="like-info">
+                <p>Total Likes</p>
+                <p><small>125</small></p>
+              </div>
+              <div class="upload-info">
+                <p>Uploaded On</p>
+                <p><small>22 January 2019</small></p>
+              </div>
+            </div>
+            <div class="action-buttons">
+              <div class="btn like-btn">
+                <i class="fa-duotone fa-square-heart"></i>
+                <p>Like</p>
+              </div>
+              <div class="btn download-btn">
+                <i class="fa-duotone fa-download"></i>
+                <p>Download</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="img">
+          <img src="./images/big-1.jpg" alt="" />
+          <div class="hover-info">
+            <div class="photographer-info-group">
+              <div class="photographer-info">
+                <img
+                  src="./images/horizontal-1.jpg"
+                  alt=""
+                  class="profile-photo"
+                />
+                <div class="info-group">
+                  <p class="name">Mailchimp</p>
+                  <p><small>Denmark</small></p>
+                </div>
+              </div>
+              <div class="btn">
+                <i class="fa-duotone fa-user-plus"></i>
+                <p>Follow</p>
+              </div>
+            </div>
+            <div class="additional-info">
+              <div class="like-info">
+                <p>Total Likes</p>
+                <p><small>125</small></p>
+              </div>
+              <div class="upload-info">
+                <p>Uploaded On</p>
+                <p><small>22 January 2019</small></p>
+              </div>
+            </div>
+            <div class="action-buttons">
+              <div class="btn like-btn">
+                <i class="fa-duotone fa-square-heart"></i>
+                <p>Like</p>
+              </div>
+              <div class="btn download-btn">
+                <i class="fa-duotone fa-download"></i>
+                <p>Download</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="img">
+          <img src="./images/normal-1.jpg" alt="" />
+          <div class="hover-info">
+            <div class="photographer-info-group">
+              <div class="photographer-info">
+                <img
+                  src="./images/horizontal-1.jpg"
+                  alt=""
+                  class="profile-photo"
+                />
+                <div class="info-group">
+                  <p class="name">Mailchimp</p>
+                  <p><small>Denmark</small></p>
+                </div>
+              </div>
+              <div class="btn">
+                <i class="fa-duotone fa-user-plus"></i>
+                <p>Follow</p>
+              </div>
+            </div>
+            <div class="additional-info">
+              <div class="like-info">
+                <p>Total Likes</p>
+                <p><small>125</small></p>
+              </div>
+              <div class="upload-info">
+                <p>Uploaded On</p>
+                <p><small>22 January 2019</small></p>
+              </div>
+            </div>
+            <div class="action-buttons">
+              <div class="btn like-btn">
+                <i class="fa-duotone fa-square-heart"></i>
+                <p>Like</p>
+              </div>
+              <div class="btn download-btn">
+                <i class="fa-duotone fa-download"></i>
+                <p>Download</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="img big">
+          <img src="./images/big-2.png" alt="" />
+          <div class="hover-info">
+            <div class="photographer-info-group">
+              <div class="photographer-info">
+                <img
+                  src="./images/horizontal-1.jpg"
+                  alt=""
+                  class="profile-photo"
+                />
+                <div class="info-group">
+                  <p class="name">Mailchimp</p>
+                  <p><small>Denmark</small></p>
+                </div>
+              </div>
+              <div class="btn">
+                <i class="fa-duotone fa-user-plus"></i>
+                <p>Follow</p>
+              </div>
+            </div>
+            <div class="additional-info">
+              <div class="like-info">
+                <p>Total Likes</p>
+                <p><small>125</small></p>
+              </div>
+              <div class="upload-info">
+                <p>Uploaded On</p>
+                <p><small>22 January 2019</small></p>
+              </div>
+            </div>
+            <div class="action-buttons">
+              <div class="btn like-btn">
+                <i class="fa-duotone fa-square-heart"></i>
+                <p>Like</p>
+              </div>
+              <div class="btn download-btn">
+                <i class="fa-duotone fa-download"></i>
+                <p>Download</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="img horizontal">
+          <img src="./images/horizontal-2.png" alt="" />
+          <div class="hover-info">
+            <div class="photographer-info-group">
+              <div class="photographer-info">
+                <img
+                  src="./images/horizontal-1.jpg"
+                  alt=""
+                  class="profile-photo"
+                />
+                <div class="info-group">
+                  <p class="name">Mailchimp</p>
+                  <p><small>Denmark</small></p>
+                </div>
+              </div>
+              <div class="btn">
+                <i class="fa-duotone fa-user-plus"></i>
+                <p>Follow</p>
+              </div>
+            </div>
+            <div class="additional-info">
+              <div class="like-info">
+                <p>Total Likes</p>
+                <p><small>125</small></p>
+              </div>
+              <div class="upload-info">
+                <p>Uploaded On</p>
+                <p><small>22 January 2019</small></p>
+              </div>
+            </div>
+            <div class="action-buttons">
+              <div class="btn like-btn">
+                <i class="fa-duotone fa-square-heart"></i>
+                <p>Like</p>
+              </div>
+              <div class="btn download-btn">
+                <i class="fa-duotone fa-download"></i>
+                <p>Download</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </main>
+    </div>
+
+    <div class="search-bar-overlay">
+      <i class="fa-duotone fa-circle-xmark" id="close-btn"></i>
+      <div class="search-bar-popup">
+        <div class="search-bar">
+          <input type="search" placeholder="Search for photos" />
+          <i class="fa-duotone fa-magnifying-glass" id="search-btn"></i>
+        </div>
+      </div>
+    </div>
+
+    <div id="loading">
+      <span class="loader"></span>
+      <p>Getting new photos...</p>
+    </div>
+    <div id="popup-message"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
